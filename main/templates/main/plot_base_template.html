@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Analysis 01</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% load static %}
+<link rel = "stylesheet" href = "{% static 'plot.css' %}">
+
+<meta name="robots" content="noindex, follow">
+<h1>{%block title%} {%endblock%} </h1>
+</head>
+<body>
+	<img class = "plot" src = "data:image/png;base64,{% block data %}{%endblock%}" alt = "" height = {% block height %}{% endblock%}, width = {% block width %}{% endblock%}>
+  <a href = "/main"><h2>Home</h2></a>
+</body>
+</html>

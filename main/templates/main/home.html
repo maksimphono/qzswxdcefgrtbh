@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <ling >
+    <style>	
+        h1{
+          font-size: 40px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        table{
+          width:100%;
+          table-layout: fixed;
+          
+        }
+        .tbl-header{
+          background-color: rgba(255,255,255,0.3);
+          font-size : 40px;
+         }
+        .tbl-content{
+          height:300px;
+          overflow-x:auto;
+          margin-top: 0px;
+          border: 1px solid rgba(255,255,255,0.3);
+        }
+        .center-row{
+            display:flex;
+            justify-content:center;
+        }
+        th{
+          padding: 20px 15px;
+          text-align: left;
+          font-weight: 500;
+          font-size: 30px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        td{
+          padding: 15px;
+          text-align: left;
+          vertical-align:middle;
+          font-weight: 300;
+          font-size: 30px;
+          color: #fff;
+          border-bottom: solid 1px rgba(255,255,255,0.1);
+        }
+        h1{
+            text-align: center;
+        }
+        .label{
+            text-align: center;
+        }
+        a {
+         padding-left : 15px;
+         padding-top : 15px;
+         display: inline-block;
+         transition: .3s;
+        }
+        a:hover {
+         -webkit-transform: scale(1.2);
+         transform: scale(1.2);
+        }
+        
+        /* demo styles */
+        
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+        body{
+          background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+          background: linear-gradient(to right, #25c481, #25b7c4);
+          font-family: 'Roboto', sans-serif;
+        }
+        section{
+          margin: 50px;
+        }
+        
+         
+        
+    </style>
+</head>
+<body>
+    <h1>欢迎大家来观察 Covid-19 工程</h1>
+    <a href = "full_list"><h2>出示全表</h2></a>
+    <a href = "full_list"><h2>观察 PPT</h2></a>
+    <a href = "full_list"><h2>观察报告</h2></a>
+    <h1>观察图</h1>
+    <div class = "center-row">
+        <a href = "plot_1"><img class = "plot" src = "data:image/png;base64,{{ plot_1 }}" alt = "Ooopsi, looks like that browser doesn't allow images, try to use another, for example 'Edge'" height = "300", width = "350"><h3 class = "label"> Evolution of New Cases </h3></a>  
+        <a href = "plot_2"><img class = "plot" src = "data:image/png;base64,{{ plot_2 }}" alt = "Ooopsi, looks like that browser doesn't allow images, try to use another, for example 'Edge'" height = "300", width = "350"><h3 class = "label"> Cumulative Number of Cases </h3></a>
+        <a href = "plot_3"><img class = "plot" src = "data:image/png;base64,{{ plot_3 }}" alt = "Ooopsi, looks like that browser doesn't allow images, try to use another, for example 'Edge'" height = "300", width = "350"><h3 class = "label"> Cumulative Number of Cases and Deceased </h3></a>
+        <a href = "plot_4"><img class = "plot" src = "data:image/png;base64,{{ plot_4 }}" alt = "Ooopsi, looks like that browser doesn't allow images, try to use another, for example 'Edge'" height = "300", width = "350"><h3 class = "label"> Number of cases </h3></a>
+    </div>
+</body>
+</html>

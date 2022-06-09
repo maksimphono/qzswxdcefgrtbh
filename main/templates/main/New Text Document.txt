@@ -1,0 +1,4 @@
+{%extends plot_base_tempalte%}
+{%block title%}
+    {{ Title }}
+{%endblock%}
